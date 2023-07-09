@@ -1,1 +1,2 @@
-# -Gradient-Decent
+# Gradient-Descent
+

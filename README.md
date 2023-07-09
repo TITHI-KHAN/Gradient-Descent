@@ -116,3 +116,26 @@ The point in a curve which is minimum when compared to all points in the curve i
 **For a curve there can be more than one local minima, but it does have only one global minima.**
 
 In gradient descent, we use this local and global minima in order to decrease the loss functions.
+
+# Code Explanation
+
+The code shows an implementation of linear regression using gradient descent to find the optimal values of the slope (m) and y-intercept (c) for a linear equation y = mx + c. **Here's a step-by-step explanation of the code:**
+
+**1. Initialization:** The code initializes the values of m, c, learning rate (l), number of data points (n), and the number of iterations to perform.
+
+**2. Iterative optimization:** The code enters a loop that iterates over the specified number of iterations. In each iteration:
+
+   **a. Prediction:** It calculates the predicted values (pred) using the current values of m and c and the input data (x).
+   
+   **b. Gradient calculation:** It computes the partial derivatives of the cost function with respect to m (der_m) and c (der_c) using the gradient formula derived from the mean squared error (MSE) cost function. The derivatives involve the difference between the predicted values and the actual values (y) multiplied by the input data (x).
+   
+  **c. Weight update:** It updates the values of m and c by subtracting the learning rate multiplied by the corresponding derivatives (der_m and der_c). This step adjusts the values of m and c in the direction of the steepest descent.
+   
+  **d. The updated values of m and c are printed at each iteration.**
+
+**3. Result:** After the loop finishes executing, the final values of m and c are printed.
+
+The code demonstrates an iterative process where, in each iteration, the weights (m and c) are updated based on the gradient of the cost function. By repeating this process for the specified number of iterations, the code aims to find the optimal values of m and c that minimize the cost function and provide the best fit for the given data.
+
+The printed values of m and c show how they are updated and gradually converge toward the optimal values. The specific values you provided indicate the final values of m and c after the specified number of iterations.
+

@@ -117,6 +117,32 @@ The point in a curve which is minimum when compared to all points in the curve i
 
 In gradient descent, we use this local and global minima in order to decrease the loss functions.
 
+# Least Squares
+
+Least squares is a mathematical method used in regression analysis to estimate the parameters of a model that minimize the sum of the squared differences between the observed data and the predicted values.
+
+In the context of linear regression, the goal is to find the best-fit line that represents the relationship between the independent variable(s) and the dependent variable. The least squares method finds the optimal values of the coefficients or parameters of the model by minimizing the sum of the squared residuals.
+
+**Here's an overview of how the least squares method works:**
+
+1. **Data collection**: Collect data that consists of pairs of observations for the independent variable(s) (often denoted as X) and the dependent variable (often denoted as Y).
+
+2. **Model specification**: Choose a mathematical model or hypothesis that represents the relationship between X and Y. In linear regression, the model is typically a linear equation of the form Y = β0 + β1*X + ε, where β0 and β1 are the coefficients to be estimated, and ε is the random error term.
+
+3. **Residual calculation**: Calculate the residuals, which are the differences between the observed values of Y and the corresponding predicted values based on the model. Residual = Y_observed - Y_predicted.
+
+4. **Sum of squared residuals**: Square each residual and sum up all the squared residuals. The goal is to minimize this sum.
+
+5. **Optimization**: Use mathematical techniques, such as calculus or linear algebra, to find the values of the coefficients (β0 and β1) that minimize the sum of squared residuals. This can involve solving a system of equations or maximizing a likelihood function.
+
+6. **Model evaluation**: Once the coefficients are estimated, the model can be used to make predictions or infer the relationship between the variables. It is also important to assess the goodness of fit of the model, such as by examining the residuals or using statistical metrics like the coefficient of determination (R-squared) or mean squared error (MSE).
+
+The least squares method is widely used because it has nice mathematical properties and provides estimates that have desirable statistical properties (such as being unbiased and having the minimum variance among linear unbiased estimators).
+
+It is important to note that the least squares method assumes that the errors or residuals follow certain assumptions, including that they are normally distributed with zero mean and constant variance. Violations of these assumptions may impact the validity of the estimates and inference from the model.
+
+Overall, the least squares method is a powerful and commonly used approach for estimating the parameters of a model in regression analysis, providing a best-fit line or curve that minimizes the sum of the squared differences between the observed data and the predicted values.
+
 # Code Explanation
 
 The code shows an implementation of linear regression using gradient descent to find the optimal values of the slope (m) and y-intercept (c) for a linear equation y = mx + c. **Here's a step-by-step explanation of the code:**

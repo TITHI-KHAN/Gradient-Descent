@@ -3,7 +3,7 @@ Gradient descent is an iterative optimization algorithm used to find the minimum
 
 The basic idea behind gradient descent is to iteratively update the parameters of a model in the direction of the steepest descent of the cost function. The cost function measures how well the model performs on the training data, and the goal is to find the parameter values that minimize this cost.
 
-**Here's a high-level overview of how gradient descent works:**
+**Here's a high-level overview of how Gradient Descent works:**
 
 **1. **Initialization**:** Start by initializing the model's parameters with some initial values.
 
@@ -125,17 +125,17 @@ In the context of linear regression, the goal is to find the best-fit line that 
 
 **Here's an overview of how the least squares method works:**
 
-1. **Data collection**: Collect data that consists of pairs of observations for the independent variable(s) (often denoted as X) and the dependent variable (often denoted as Y).
+**1. Data collection**: Collect data that consists of pairs of observations for the independent variable(s) (often denoted as X) and the dependent variable (often denoted as Y).
 
-2. **Model specification**: Choose a mathematical model or hypothesis that represents the relationship between X and Y. In linear regression, the model is typically a linear equation of the form Y = β0 + β1*X + ε, where β0 and β1 are the coefficients to be estimated, and ε is the random error term.
+**2. Model specification**: Choose a mathematical model or hypothesis that represents the relationship between X and Y. In linear regression, the model is typically a linear equation of the form Y = β0 + β1*X + ε, where β0 and β1 are the coefficients to be estimated, and ε is the random error term.
 
-3. **Residual calculation**: Calculate the residuals, which are the differences between the observed values of Y and the corresponding predicted values based on the model. Residual = Y_observed - Y_predicted.
+**3. Residual calculation**: Calculate the residuals, which are the differences between the observed values of Y and the corresponding predicted values based on the model. Residual = Y_observed - Y_predicted.
 
-4. **Sum of squared residuals**: Square each residual and sum up all the squared residuals. The goal is to minimize this sum.
+**4. Sum of squared residuals**: Square each residual and sum up all the squared residuals. The goal is to minimize this sum.
 
-5. **Optimization**: Use mathematical techniques, such as calculus or linear algebra, to find the values of the coefficients (β0 and β1) that minimize the sum of squared residuals. This can involve solving a system of equations or maximizing a likelihood function.
+**5. Optimization**: Use mathematical techniques, such as calculus or linear algebra, to find the values of the coefficients (β0 and β1) that minimize the sum of squared residuals. This can involve solving a system of equations or maximizing a likelihood function.
 
-6. **Model evaluation**: Once the coefficients are estimated, the model can be used to make predictions or infer the relationship between the variables. It is also important to assess the goodness of fit of the model, such as by examining the residuals or using statistical metrics like the coefficient of determination (R-squared) or mean squared error (MSE).
+**6. Model evaluation**: Once the coefficients are estimated, the model can be used to make predictions or infer the relationship between the variables. It is also important to assess the goodness of fit of the model, such as by examining the residuals or using statistical metrics like the coefficient of determination (R-squared) or mean squared error (MSE).
 
 The least squares method is widely used because it has nice mathematical properties and provides estimates that have desirable statistical properties (such as being unbiased and having the minimum variance among linear unbiased estimators).
 
